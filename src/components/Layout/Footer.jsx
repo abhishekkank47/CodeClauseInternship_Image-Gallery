@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <>
       <div className="footer" style={{ minHeight: "15vh" }}>
-        <h3>
+        <h4>
             All Rights Reserved @ Abhishek Kank
-        </h3>
+        </h4>
       </div>
     </>
   );
