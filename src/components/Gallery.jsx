@@ -7,7 +7,17 @@ const Gallery = () => {
     <>
       <div className="gallery" style={{ minHeight: "75vh" }}>
         <SearchBar />
-        <ImageCards />
+        <div className="d-flex flex-wrap cardsBlock">
+          <ImageCards />
+          <ImageCards />
+          <ImageCards />
+          <ImageCards />
+          <ImageCards />
+          <ImageCards />
+          <ImageCards />
+          <ImageCards />
+          <ImageCards />
+        </div>
       </div>
     </>
   );

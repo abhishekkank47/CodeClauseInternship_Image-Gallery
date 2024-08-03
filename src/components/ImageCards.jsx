@@ -1,19 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { FaDownload } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 
 const ImageCards = () => {
+
+  const []= useState('')
+  const []= useState('')
+
   return (
     <>
-      <div className="d-flex flex-wrap">
-
+      <div className="">
         {/* card */}
-        <div className="card me-3" style={{ width: "18rem" }}>
-          <img src="..." className="card-img-top" alt="Image" />
+        <div className="card mt-3 me-5" style={{ width: "18rem" }}>
+          <img
+            src="https://picsum.photos/id/14/200/300"
+            className="card-img-top"
+            alt="Image"
+          />
           <div className="card-body">
-            <h5 className="card-title">Image Title</h5>
+            <h4 className="card-title text-center">Image Title</h4>
             <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              <strong>
+                <ul className="imgParameters">
+                  <li>
+                    <FaEye /> 185563
+                  </li>
+                  <li>
+                    <FaRegHeart /> 1987
+                  </li>
+                  <li>Total Downloads : 895</li>
+                </ul>
+              </strong>
+              <div className='d-flex flex-wrap mt-2 tags'>
+                <span>#tag</span>
+                <span>#tag</span>
+                <span>#tag</span>
+                <span>#tag</span>
+                <span>#tag</span>
+                <span>#tag</span>
+                </div>
             </p>
             <button to="#" className="btn btn-primary">
               Download <FaDownload />
@@ -21,39 +48,6 @@ const ImageCards = () => {
           </div>
         </div>
         {/* card */}
-
-        {/* card */}
-        <div className="card me-3" style={{ width: "18rem" }}>
-          <img src="..." className="card-img-top" alt="Image" />
-          <div className="card-body">
-            <h5 className="card-title">Image Title</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <button to="#" className="btn btn-primary">
-              Download <FaDownload />
-            </button>
-          </div>
-        </div>
-        {/* card */}
-
-                {/* card */}
-                <div className="card me-3" style={{ width: "18rem" }}>
-          <img src="..." className="card-img-top" alt="Image" />
-          <div className="card-body">
-            <h5 className="card-title">Image Title</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <button to="#" className="btn btn-primary">
-              Download <FaDownload />
-            </button>
-          </div>
-        </div>
-        {/* card */}
-
       </div>
     </>
   );
