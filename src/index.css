@@ -8,7 +8,7 @@
 
 .footer{
   color:white;
-  background:black;
+  background:#005792;
   display:flex;
   justify-content:center;
   align-item: center;
@@ -17,7 +17,7 @@
 
 .header{
   color:white;
-  background:black;
+  background:#005792 !important;
   font-weight:400;
   letter-spacing:4px;
   display:flex;
@@ -30,7 +30,7 @@
 /* Gallery */
 
 .gallery{
-  background:;
+  background:#bae8e8;
   padding:20px;
 }
 
@@ -46,8 +46,12 @@
   margin:0;
 }
 
+.card-body{
+  background:#b6e1e0;
+}
+
 span {
-  background:lightgray;
+  background:#cadefc;
   padding:0 9px 5px 9px;
   margin:3px;
   border-radius:20px;
